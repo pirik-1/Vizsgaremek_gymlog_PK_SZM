@@ -1,0 +1,62 @@
+body{
+    background-color: rgba(125, 125, 125, 1);
+}
+
+.loginDiv{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    background-color: rgba(217, 217, 217, 1);
+    text-align: center;
+    margin:auto;
+    position:static;
+    margin-top: 10%;
+    width: 500px;
+    height: 650px;
+    border-radius: 52px;
+}
+
+.loginDiv h1{
+    font-size: 48px;
+    color: black;
+    padding-top: 20px;
+}
+
+.loginDiv h2{
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.loginDiv button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input {
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
