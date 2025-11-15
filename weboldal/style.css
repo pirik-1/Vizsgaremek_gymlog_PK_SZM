@@ -43,6 +43,7 @@ body{
     outline: none;
     transition: all 0.2s ease;
     background-color: rgba(217, 217, 217, 0.7);
+    cursor: pointer;
 }
 
 /*Regisztrációs oldal css része*/
@@ -83,6 +84,7 @@ body{
     outline: none;
     transition: all 0.2s ease;
     background-color: rgba(217, 217, 217, 0.7);
+    cursor: pointer;
 }
 
 /*Egyéb*/
