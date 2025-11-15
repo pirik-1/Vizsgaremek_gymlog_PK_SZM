@@ -1,24 +1,29 @@
 body{
-    background-color: rgba(125, 125, 125, 1);
+    background-image: url(img/hatter3.jpg);
+    background-attachment: fixed;  
+    background-size: cover;
+    color: white;
 }
 
+/*Bejelentkezés oldal css része*/
+
 .loginDiv{
-    color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    background-color: rgba(217, 217, 217, 1);
+    color: white;
+    background-color: rgba(217, 217, 217, 0.2);
+    border: rgba(217, 217, 217, 0.4) solid 5px;
     text-align: center;
     margin:auto;
     position:static;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 500px;
-    height: 650px;
+    height: 450px;
     border-radius: 52px;
 }
 
 .loginDiv h1{
     font-size: 48px;
-    color: black;
     padding-top: 20px;
 }
 
@@ -33,30 +38,81 @@ body{
     height: 50px;
     margin-top: 20px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; 
     border-radius: 15px;
     outline: none;
     transition: all 0.2s ease;
+    background-color: rgba(217, 217, 217, 0.7);
 }
 
-input {
+/*Regisztrációs oldal css része*/
+
+.regDiv{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;    
+    background-color: rgba(217, 217, 217, 0.2);
+    border: rgba(217, 217, 217, 0.4) solid 5px;
+    text-align: center;
+    margin:auto;
+    position:static;
+    margin-top: 5%;
+    width: 500px;
+    height: 550px;
+    border-radius: 52px;
+}
+
+.regDiv h1{
+    font-size: 48px;
+    padding-top: 20px;
+}
+
+.regDiv h2{
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.regDiv button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid #cccccc00;
+    border-radius: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: rgba(217, 217, 217, 0.7);
+}
+
+/*Egyéb*/
+
+.mutasdajelszot{
+    text-align: right;
+    margin-right: 10%;
+    padding-top: 5px;
+}
+
+.inputok {
     width: 430px;
-    height: 30px;
+    height: 50px;
     padding: 10px;
     padding-left: 20px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    background-color: rgba(217, 217, 217, 0.2);
+    border: rgba(217, 217, 217, 0.4) solid 3px;
     border-radius: 15px;
     outline: none;
     transition: all 0.2s ease;
 }
 
-input:focus {
-    border-color: #000000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+.inputok::placeholder{
+    color: rgba(255, 255, 255, 0.429);
 }
 
-button:focus {
-    border-color: #000000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+.inputok:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
 }
+
