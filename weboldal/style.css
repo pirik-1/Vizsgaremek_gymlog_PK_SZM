@@ -88,11 +88,11 @@ body{
 /*Egyéb*/
 
 .mutasdajelszot{
-    text-align: right;
-    margin-right: 10%;
     padding-top: 5px;
     font-weight: lighter;
     font-style: italic;
+    margin-left: 60%;
+    cursor: default;
 }
 
 .inputok {
