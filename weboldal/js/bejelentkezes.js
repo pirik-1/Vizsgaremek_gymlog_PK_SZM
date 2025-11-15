@@ -7,7 +7,8 @@ mutasd.addEventListener("mouseover", function(){
 })
 mutasd.addEventListener("mouseout", function(){
     jelszo.type = "password";
-    mutasd.style.color = "white"
+    mutasd.style.color = "white";
 })
+
 
 
