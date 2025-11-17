@@ -12,3 +12,5 @@ mutasdReg.addEventListener("mouseout", function(){
     jelszoRegUjra.type = "password";
     mutasdReg.style.color = "white";
 })
+
+
