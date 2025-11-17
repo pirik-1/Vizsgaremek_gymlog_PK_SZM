@@ -13,4 +13,18 @@ mutasdReg.addEventListener("mouseout", function(){
     mutasdReg.style.color = "white";
 })
 
+let nev = document.getElementById("nev");
+let reg = document.getElementById("reg");
+let hiba = document.getElementById("hiba");
 
+reg.addEventListener("click", function(){
+    if (nev.value.trim() === "" || jelszoReg.value.trim() === "" || jelszoRegUjra.value.trim() === "" ){
+        hiba.innerText = "Minden mezőt töltsön ki!";
+    }
+    else{
+        hiba.innerText = "";
+    }
+    if(jelszoReg.value.trim() !== jelszoRegUjra.value.trim()){
+        hiba.innerText = "A két jelszó meg kell egyezzen!";
+    }
+})

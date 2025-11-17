@@ -12,7 +12,7 @@
     <div class="regDiv">
         <h1>GymLog</h1>
         <h2>Felhasználónév:</h2>
-        <input type="text" placeholder="Felhasználónév" class="inputok">
+        <input type="text" placeholder="Felhasználónév" class="inputok" id="nev">
         <h2>Jelszó:</h2>
         <input type="password" placeholder="Jelszó" class="inputok" id="jelszoReg">
         <h2>Jelszó újra:</h2>
@@ -20,9 +20,12 @@
         <span class="mutasdajelszot" id="mutasdReg">Mutasd a jelszót</span>
         <br>
         <br>
-        
-        <a href="index.html"><button>Regisztráció</button></a>
+
+        <button id="reg">Regisztráció</button>
         <a href="bejelentkezes.html"><button>Mégse</button></a>
+        <br>
+        <br>
+        <p id="hiba"></p>
     </div>
 
     <!-- Bootstrap JS -->
