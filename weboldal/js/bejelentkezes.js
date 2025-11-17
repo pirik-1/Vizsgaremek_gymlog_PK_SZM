@@ -10,5 +10,6 @@ mutasd.addEventListener("mouseout", function(){
     mutasd.style.color = "white";
 })
 
+let nev = document.getElementById()
 
 

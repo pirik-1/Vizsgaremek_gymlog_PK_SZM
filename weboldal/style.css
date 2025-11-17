@@ -11,8 +11,6 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     color: white;
-    background-color: rgba(217, 217, 217, 0.2);
-    border: rgba(217, 217, 217, 0.4) solid 5px;
     text-align: center;
     margin:auto;
     position:static;
@@ -20,6 +18,10 @@ body{
     width: 500px;
     height: 450px;
     border-radius: 52px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .loginDiv h1{
@@ -38,11 +40,12 @@ body{
     height: 50px;
     margin-top: 20px;
     font-size: 16px;
-    border: 1px solid #ccc; 
     border-radius: 15px;
     outline: none;
-    transition: all 0.2s ease;
-    background-color: rgba(217, 217, 217, 0.7);
+    background-color: rgba(217, 217, 217, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -52,8 +55,6 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     color: white;    
-    background-color: rgba(217, 217, 217, 0.2);
-    border: rgba(217, 217, 217, 0.4) solid 5px;
     text-align: center;
     margin:auto;
     position:static;
@@ -61,6 +62,10 @@ body{
     width: 500px;
     height: 550px;
     border-radius: 52px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .regDiv h1{
@@ -79,11 +84,12 @@ body{
     height: 50px;
     margin-top: 20px;
     font-size: 16px;
-    border: 1px solid #cccccc00;
     border-radius: 15px;
     outline: none;
-    transition: all 0.2s ease;
-    background-color: rgba(217, 217, 217, 0.7);
+    background-color: rgba(217, 217, 217, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -105,7 +111,7 @@ body{
     font-size: 16px;
     /* border: 1px solid #ccc; */
     background-color: rgba(217, 217, 217, 0.2);
-    border: rgba(217, 217, 217, 0.4) solid 3px;
+    border: rgba(217, 217, 217, 0.4) solid 2px;
     border-radius: 15px;
     outline: none;
     transition: all 0.2s ease;
@@ -120,3 +126,15 @@ body{
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
+.loginDiv button:hover,
+.regDiv button:hover {
+    background: rgba(255, 255, 255, 0.45);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.loginDiv button:active,
+.regDiv button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
