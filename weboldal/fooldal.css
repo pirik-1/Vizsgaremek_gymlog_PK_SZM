@@ -1,0 +1,78 @@
+body{
+    background-image: url(img/Moonlit\ Asteroid.jpg) !important;
+    background-attachment: fixed !important; 
+    background-size: cover !important;
+    color: white !important;
+}
+
+ul {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-color: #333333 !important;
+
+    display: flex !important;
+    list-style: none !important;
+}
+
+ul li {
+    float: left !important;
+}
+
+ul li a {
+    display: block !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 14px 16px !important;
+    text-decoration: none !important;
+}
+
+ul li a:hover,
+ul li a:visited,
+ul li a:active,
+ul li a:focus {
+    background-color: #111111 !important;
+}
+
+ul li:first-child {
+    margin-right: auto !important; /* minden mást jobbra tol */
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        background-image: none !important;
+        background-color: rgb(150, 150, 150) !important;;
+        color: blue !important;;
+    }
+    .menu-icon{
+        display: block !important;
+    }
+    ul li {
+        display: none !important;
+    }
+    ul li:first-child,
+    ul li:last-child{
+        display: block !important;
+    }
+
+    h2.alatt{
+        display: block !important;
+    }
+    h2.felett{
+        display: none !important;
+    }
+}
+h2.alatt{
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    filter: invert(1) brightness(2); /* fekete → fehér */
+    margin: auto !important;
+    margin-top: 25% !important;
+    margin-right: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+}
