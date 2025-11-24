@@ -36,10 +36,10 @@ ul li a:focus {
 }
 
 ul li:first-child {
-    margin-right: auto !important; /* minden mást jobbra tol */
+    margin-right: auto !important; /* minden mást jobbra tol a menüben csak a Home gomb marad jobb oldalt*/
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     body{
         background-image: none !important;
         background-color: rgb(150, 150, 150) !important;;
@@ -48,6 +48,13 @@ ul li:first-child {
     .menu-icon{
         display: block !important;
     }
+    .menu-icon-li {
+        position: absolute !important;
+        top: 3px !important;
+        right: 2% !important;
+        display: block !important;
+        z-index: 9999 !important;
+    }
     ul li {
         display: none !important;
     }
@@ -55,7 +62,22 @@ ul li:first-child {
     ul li:last-child{
         display: block !important;
     }
+    
 
+
+
+    ul {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    ul.open li { display: block !important; }
+    ul.open li img.menu-icon { display: block !important;}
+    
+
+
+
+    /*ezt a kettőt későbbiekben töröljük*/
     h2.alatt{
         display: block !important;
     }
