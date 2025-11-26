@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/ujedzes.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="/img/gymlog-white.png">
     <title>Új edzés</title>
@@ -11,12 +11,52 @@
 <body>
     <style>
         body{    
-            background-image: url(/img/Moonlit\ Asteroid.jpg);
+            background-image: url(/img/moonlit-asteroid.jpg);
             background-attachment: fixed;  
             background-size: cover;
             color: white;
         }
     </style>
     <h1 style="text-align: center;">Új edzés<br> gombra kattintottál!</h1>
+
+    <div class="loginDiv">
+        <h1 >Új Edzés</h1>
+        <h2>Edzés név:</h2>
+        <input type="text" class="inputok" >
+        <h2>Izom csoport:</h2>
+        <input type="text" class="inputok">
+        <h2>Ismétlések száma:</h2>
+        <input class="inputok2"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "2"
+        />
+        <h2>Egy ismétlés száma:</h2>
+        <input class="inputok2"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "2"
+        />
+        <ul>
+            <input type="checkbox">
+            <label for="">Hétfő</label>
+            <input type="checkbox">
+            <label for="">Kedd</label>
+            <input type="checkbox">
+            <label for="">Szerda</label>
+            <input type="checkbox">
+            <label for="">Csütörtök</label>
+            <input type="checkbox">
+            <label for="">Péntek</label>
+            <input type="checkbox">
+            <label for="">Szombat</label>
+            <input type="checkbox">
+            <label for="">Vasárnap</label>
+        </ul>
+        <button id = "mentes">Edzés mentése</button>
+        <br>
+        <br>
+        <p id="hiba"></p>
+    </div>
 </body>
 </html>
