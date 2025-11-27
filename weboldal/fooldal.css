@@ -91,10 +91,22 @@ h2.alatt{
 
 .menu-icon {
     display: none;
-    filter: invert(1) brightness(2); /* fekete → fehér */
+    filter: invert(1) brightness(2);
     margin: auto !important;
     margin-top: 25% !important;
     margin-right: 50% !important;
     width: 32px !important;
     height: 32px !important;
+}
+
+.adottoldal {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.adottoldal {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
 }
