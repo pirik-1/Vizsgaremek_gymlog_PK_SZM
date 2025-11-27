@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/kalkulator.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="/img/gymlog-white.png">
     <title>Kalkulátor</title>
@@ -18,5 +18,49 @@
         }
     </style>
     <h1 style="text-align: center;">Kalória kalkulátor<br> gombra kattintottál!</h1>
+        
+    <div class="loginDiv">
+        <h1 >Kalória kalkulátor</h1>
+        <h2>Nem:</h2>
+        <!-- <input type="text" class="inputok" > -->
+
+        <form class="form1">
+            <label>
+                <input type="radio" name="valasztas" id="ferfi" value="Férfi"> Férfi
+            </label>
+            <label>
+                <input type="radio" name="valasztas" id="no" value="Nő"> Nő
+            </label>
+            <label>
+                <input type="radio" name="valasztas" id="no-allapotos" value="Nő (állapotos)"> Nő (állapotos)
+            </label>
+        </form>
+        <h2>Életkor:</h2>
+        <input type="number" class="inputok2">
+        <h2>Magasság (cm):</h2>
+        <input class="inputok2" type = "number"/>
+        <h2>Tömeg (kg)</h2>
+        <input class="inputok2" type = "number"/>
+        <h2>Testzsír (%, opcionális)</h2>
+        <input class="inputok2" type = "number"/>
+        
+        <h2>Cél:</h2>
+        <form class="form1">
+            <label>
+                <input type="radio" name="valasztas" id="ferfi" value="Férfi"> Szintentartás
+            </label>
+            <label>
+                <input type="radio" name="valasztas" id="no" value="Nő"> Fogyás
+            </label>
+            <label>
+                <input type="radio" name="valasztas" id="no-allapotos" value="Nő (állapotos)"> Tömegnövelés
+            </label>
+        </form>
+
+        <button id = "mentes">Számítás</button>
+        <br>
+        <br>
+        <p id="hiba"></p>
+    </div>
 </body>
 </html>

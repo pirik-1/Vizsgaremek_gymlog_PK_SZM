@@ -16,7 +16,7 @@ body{
     position:static;
     margin-top: 5%;
     width: 500px;
-    height: 450px;
+    height: 750px;
     border-radius: 52px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -30,10 +30,10 @@ body{
 }
 
 .loginDiv h2{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 2%;
     padding-left: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .loginDiv button{
@@ -51,60 +51,12 @@ body{
     cursor: pointer;
 }
 
-/*Regisztrációs oldal css része*/
-
-.regDiv{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    color: white;    
-    text-align: center;
-    margin:auto;
-    position:static;
-    margin-top: 5%;
-    width: 500px;
-    height: 550px;
-    border-radius: 52px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.12);
-    border: 2px solid rgba(255, 255, 255, 0.25);
-}
-
-.regDiv h1{
-    font-size: 48px;
-    padding-top: 20px;
-}
-
-.regDiv h2{
-    margin-top: 2%;
-    font-size: 20px;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.regDiv button{
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    margin: 2%;
-    font-size: 16px;
-    border-radius: 15px;
-    outline: none;
-    background-color: rgba(217, 217, 217, 0.3);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
 
 /*Egyéb*/
 
-.mutasdajelszot{
-    padding-top: 5px;
-    font-weight: lighter;
-    font-style: italic;
-    margin-left: 60%;
-    cursor: default;
+input[type="radio"]{
+    padding-left: 100px;
+    margin-left: 10px;
 }
 
 .inputok {
@@ -129,6 +81,28 @@ body{
     border-color: #ffffff;
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
+.inputok2 {
+    width: 430px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    background-color: rgba(217, 217, 217, 0.2);
+    border: rgba(217, 217, 217, 0.4) solid 2px;
+    border-radius: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.inputok2::placeholder{
+    color: rgba(255, 255, 255, 0.429);
+}
+
+.inputok2:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
 
 .loginDiv button:hover,
 .regDiv button:hover {
@@ -145,4 +119,10 @@ body{
 
 #hiba{
     color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
