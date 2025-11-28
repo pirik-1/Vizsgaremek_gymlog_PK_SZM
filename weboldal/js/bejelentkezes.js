@@ -22,5 +22,3 @@ login.addEventListener("click", function(){
         hiba.innerText = "";
     }
 })
-
-

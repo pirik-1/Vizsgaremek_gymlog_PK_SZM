@@ -122,7 +122,8 @@ input::-webkit-inner-spin-button {
 #hiba{
     color: red;
 }
-/* 
+
+
 ul {
     list-style-type: none !important;
     margin: 0 !important;
@@ -151,4 +152,75 @@ ul li a:visited,
 ul li a:active,
 ul li a:focus {
     background-color: #111111 !important;
-} */
+}
+
+ul li:first-child {
+    margin-right: auto !important; /* minden mást jobbra tol a menüben csak a Home gomb marad jobb oldalt*/
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-image: none !important;
+        background-color: rgb(150, 150, 150) !important;;
+        color: blue !important;;
+    }
+    .menu-icon{
+        display: block !important;
+    }
+    .menu-icon-li {
+        position: absolute !important;
+        top: 3px !important;
+        right: 2% !important;
+        display: block !important;
+        z-index: 9999 !important;
+    }
+    ul li {
+        display: none !important;
+    }
+    ul li:first-child,
+    ul li:last-child{
+        display: block !important;
+    }
+    
+
+
+
+    ul {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    ul.open li { display: block !important; }
+    ul.open li img.menu-icon { display: block !important;}
+    
+
+
+
+    /*ezt a kettőt későbbiekben töröljük*/
+    h2.alatt{
+        display: block !important;
+    }
+    h2.felett{
+        display: none !important;
+    }
+}
+
+h2.alatt{
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    filter: invert(1) brightness(2); /* fekete → fehér */
+    margin: auto !important;
+    margin-top: 25% !important;
+    margin-right: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.adottoldal {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor:zoom-in;
+}
