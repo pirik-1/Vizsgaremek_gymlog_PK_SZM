@@ -105,8 +105,24 @@ h2.alatt{
     cursor: default;
 }
 
-.adottoldal {
+.home-btn{
+    /* margin: auto !important; */
+    /* margin-top: 5% !important; */
+    /* margin-left: 15% !important; */
+    height: 52px !important;
+    width: 52px !important;
+}
+.home-btn-a {
+    display: flex !important;
+    color: white !important;
+    align-items: center !important;
+    padding: 0px !important;
+    padding-top: 0px !important;
+    text-decoration: none !important;
+}
+
+/* .adottoldal {
     pointer-events: none;
     opacity: 0.5;
     cursor: default;
-}
+} */
