@@ -12,7 +12,7 @@
 </head>
 <body>
     <ul>
-        <li><a class="home-btn-a" href="/index.html"><img class="home-btn" src="img/gymlog-white-removebg.png"></a></li>
+        <li><a class="home-btn-a" href="index.php"><img class="home-btn" src="img/gymlog-white-removebg.png"></a></li>
         <li><a href="html/ujedzes.html">Új edzés</a></li>
         <li><a href="html/kozosseg.html">Közösség</a></li>
         <li><a href="html/statisztikak.html">Statisztikák</a></li>
