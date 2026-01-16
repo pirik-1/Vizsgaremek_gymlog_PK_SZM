@@ -1,0 +1,79 @@
+    body{    
+        background-image: url(../img/moonlit-asteroid.jpg);
+        background-attachment: fixed;  
+        background-size: cover;
+        color: white;
+    }
+
+    .profil-container{
+        max-width: 1100px;
+        margin: 4% auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .profil-card{
+        border-radius: 30px;
+        padding: 25px;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 2px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .profil-card h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .profil-adatok p{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .stat-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+
+    .stat-box{
+        padding: 15px;
+        border-radius: 20px;
+        background: rgba(255,255,255,0.15);
+    }
+
+    .stat-box h3{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .barat{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background: rgba(255,255,255,0.15);
+        margin-bottom: 10px;
+    }
+
+    .barat span{
+        font-size: 18px;
+    }
+
+    .barat button{
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        background: rgba(255,255,255,0.3);
+        color: white;
+        cursor: pointer;
+    }
+
+    .profil-full{
+        grid-column: span 2;
+    }

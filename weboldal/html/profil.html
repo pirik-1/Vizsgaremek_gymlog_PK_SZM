@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/profil.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="icon" type="image/x-icon" href="../img/gymlog-white.png">
-    <script src="../js/index.js" defer></script>
 
     <title>Profil</title>
+
+    <link rel="stylesheet" href="../css/profiltartalom.css">
+    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="icon" type="image/x-icon" href="../img/gymlog-white.png">
+    <script src="../js/index.js" defer></script>
 </head>
+
 <body>
-    <style>
-        body{    
-            background-image: url(../img/moonlit-asteroid.jpg);
-            background-attachment: fixed;  
-            background-size: cover;
-            color: white;
-        }
-    </style>
-    <ul>
-        <li><a class="home-btn-a" href="../index.php"><img class="home-btn" src="../img/gymlog-white-removebg.png"></a></li>
-        <li><a href="ujedzes.html">Új edzés</a></li>
-        <li><a href="kozosseg.html">Közösség</a></li>
-        <li><a href="statisztikak.html">Statisztikák</a></li>
-        <li><a href="kalkulator.html">Kalória kalkulátor</a></li>
-        <li><a href="profil.html">Profil</a></li>
-        <li class="menu-icon-li"><img src="../img/menu.png" id="menuBtn" class="menu-icon" alt="menu"></li>
-        
-        <!-- <img src="img/menu.png" class="menu-icon" alt="menu"> -->
-    </ul>
-    <h1 style="text-align: center;">Profil<br> gombra kattintottál!</h1>
+
+<!-- NAVBAR -->
+<ul>
+    <li><a class="home-btn-a" href="../index.php"><img class="home-btn" src="../img/gymlog-white-removebg.png"></a></li>
+    <li><a href="ujedzes.html">Új edzés</a></li>
+    <li><a href="kozosseg.html">Közösség</a></li>
+    <li><a href="statisztikak.html">Statisztikák</a></li>
+    <li><a href="kalkulator.html">Kalória kalkulátor</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li class="menu-icon-li"><img src="../img/menu.png" id="menuBtn" class="menu-icon"></li>
+</ul>
+
+<!-- PROFIL -->
+<div class="profil-container">
+
+    <!-- ADATOK -->
+    <div class="profil-card profil-adatok">
+        <h2>👤 Adatok</h2>
+        <p><b>Név:</b></p>
+        <p><b>E-mail:</b></p>
+        <p><b>Regisztráció:</b></p>
+    </div>
+
+    <!-- STATISZTIKÁK -->
+    <div class="profil-card">
+        <h2>📊 Statisztikák</h2>
+        <div class="stat-grid">
+            <div class="stat-box">
+                <h3>128</h3>
+                <p>Edzés</p>
+            </div>
+            <div class="stat-box">
+                <h3>412</h3>
+                <p>Óra</p>
+            </div>
+            <div class="stat-box">
+                <h3>32</h3>
+                <p>Barát</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARÁTOK -->
+    <div class="profil-card profil-full">
+        <h2>👥 Barátok</h2>
+
+        <div class="barat">
+            <span></span>
+            <button>Profil</button>
+        </div>
+
+        <div class="barat">
+            <span></span>
+            <button>Profil</button>
+        </div>
+
+        <div class="barat">
+            <span></span>
+            <button>Profil</button>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
