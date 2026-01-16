@@ -33,10 +33,8 @@ session_start();
     <span class="mutasdajelszot" id="mutasdReg">Mutasd a jelszót</span>
     <br><br>
 
-    <button id="reg" type="submit">Regisztráció</button>
-
-    <!-- NE legyen button a linkben -->
-    <a href="bejelentkezes.php" class="btn btn-secondary">Mégse</a>
+    <button id="reg" type="submit" class="gomb">Regisztráció</button>
+    <a href="bejelentkezes.php" class="gomb">Vissza</a>
 
     <br><br>
 
