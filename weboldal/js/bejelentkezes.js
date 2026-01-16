@@ -10,12 +10,12 @@ mutasd.addEventListener("mouseout", function(){
     mutasd.style.color = "white";
 })
 
-let nev = document.getElementById("nev");
+let email = document.getElementById("email");
 let login = document.getElementById("login");
 let hiba = document.getElementById("hiba");
 
 login.addEventListener("click", function(){
-    if (nev.value.trim() === "" || jelszo.value.trim() === "" ){
+    if (email.value.trim() === "" || jelszo.value.trim() === "" ){
         hiba.innerText = "Minden mezőt töltsön ki!";
     }
     else{

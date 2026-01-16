@@ -31,7 +31,5 @@
     <h2 class="felett" style="text-align: center;"><br>700px felett!</h2>
 
 
-    <!-- Bootstrap JS -->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
